@@ -1,0 +1,3 @@
+setting: yaml-value
+nested:
+  key: yaml-nested-value

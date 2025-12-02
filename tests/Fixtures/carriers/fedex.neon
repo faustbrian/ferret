@@ -1,0 +1,9 @@
+name: FedEx
+code: fedex
+rates:
+    domestic: 6.49
+    international: 18.99
+services:
+    - ground
+    - express
+    - priority

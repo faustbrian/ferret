@@ -1,0 +1,6 @@
+{
+    "setting": "value",
+    "nested": {
+        "key": "nested-value"
+    }
+}

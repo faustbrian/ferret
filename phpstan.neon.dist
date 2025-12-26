@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+
+    reportUnmatchedIgnoredErrors: true
+
+    ignoreErrors:
+        # Intentional use of env() for runtime environment variable access in interpolation
+        - message: "#Called 'env' outside of the config directory#"
+          path: src/FerretManager.php
+        # PHPDoc array types in Facade are intentionally simplified for readability
+        - message: "#PHPDoc tag @method for method diff\\(\\) parameter .* with no value type#"
+          path: src/Facades/Ferret.php

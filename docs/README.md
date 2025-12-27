@@ -1,8 +1,3 @@
----
-title: Getting Started
-description: Install and start using Ferret for configuration management in PHP.
----
-
 Ferret is a configuration management library for PHP that supports multiple formats including PHP arrays, JSON, YAML, TOML, INI, XML, and NEON.
 
 ## Installation

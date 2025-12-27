@@ -1,8 +1,3 @@
----
-title: Directory Loading
-description: Load and merge configuration from entire directories.
----
-
 Load and merge configuration from entire directories.
 
 **Use case:** Loading environment-specific configurations, managing modular config files, or combining multiple configuration sources.

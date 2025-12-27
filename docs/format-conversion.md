@@ -1,8 +1,3 @@
----
-title: Format Conversion
-description: Convert configuration files between different formats.
----
-
 Convert configuration files between different formats.
 
 **Use case:** Migrating configurations, generating configs for different tools, or normalizing config formats across projects.

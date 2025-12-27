@@ -1,8 +1,3 @@
----
-title: Typed Accessors
-description: Type-safe configuration value access with automatic casting.
----
-
 Type-safe configuration value access with automatic casting.
 
 **Use case:** Ensuring type safety when reading configuration values, providing defaults, and validating configuration structure.

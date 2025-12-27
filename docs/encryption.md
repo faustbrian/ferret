@@ -1,8 +1,3 @@
----
-title: Encryption
-description: Encrypt sensitive configuration values for secure storage.
----
-
 Encrypt sensitive configuration values for secure storage.
 
 **Use case:** Storing API keys, database passwords, and other secrets safely in configuration files that may be committed to version control.

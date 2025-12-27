@@ -45,7 +45,7 @@ Ferret automatically detects the format based on file extension:
 
 ## Next Steps
 
-- [Directory Loading](/ferret/directory-loading/) - Load entire configuration directories
-- [Format Conversion](/ferret/format-conversion/) - Convert between formats
-- [Typed Accessors](/ferret/typed-accessors/) - Type-safe value access
-- [Encryption](/ferret/encryption/) - Protect sensitive values
+- [Directory Loading](./directory-loading.md) - Load entire configuration directories
+- [Format Conversion](./format-conversion.md) - Convert between formats
+- [Typed Accessors](./typed-accessors.md) - Type-safe value access
+- [Encryption](./encryption.md) - Protect sensitive values

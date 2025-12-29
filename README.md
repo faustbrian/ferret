@@ -56,14 +56,14 @@ If you discover any security related issues, please use the [GitHub security rep
 
 The MIT License. Please see [License File](LICENSE.md) for more information.
 
-[ico-tests]: https://github.com/faustbrian/ferret/actions/workflows/quality-assurance.yaml/badge.svg
+[ico-tests]: https://git.cline.sh/faustbrian/ferret/actions/workflows/quality-assurance.yaml/badge.svg
 [ico-version]: https://img.shields.io/packagist/v/cline/ferret.svg
 [ico-license]: https://img.shields.io/badge/License-MIT-green.svg
 [ico-downloads]: https://img.shields.io/packagist/dt/cline/ferret.svg
 
-[link-tests]: https://github.com/faustbrian/ferret/actions
+[link-tests]: https://git.cline.sh/faustbrian/ferret/actions
 [link-packagist]: https://packagist.org/packages/cline/ferret
 [link-downloads]: https://packagist.org/packages/cline/ferret
-[link-security]: https://github.com/faustbrian/ferret/security
-[link-maintainer]: https://github.com/faustbrian
+[link-security]: https://git.cline.sh/faustbrian/ferret/security
+[link-maintainer]: https://git.cline.sh/faustbrian
 [link-contributors]: ../../contributors

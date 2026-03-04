@@ -1,0 +1,9 @@
+name: UPS
+code: ups
+rates:
+    domestic: 5.99
+    international: 15.99
+services:
+    - ground
+    - express
+    - overnight

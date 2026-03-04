@@ -1,0 +1,9 @@
+{
+    "name": "DHL",
+    "code": "dhl",
+    "rates": {
+        "domestic": 7.99,
+        "international": 12.99
+    },
+    "services": ["express", "economy", "freight"]
+}

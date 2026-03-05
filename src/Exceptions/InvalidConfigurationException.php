@@ -9,6 +9,9 @@
 
 namespace Cline\Ferret\Exceptions;
 
+use Facade\IgnitionContracts\BaseSolution;
+use Facade\IgnitionContracts\ProvidesSolution;
+use Facade\IgnitionContracts\Solution;
 use RuntimeException;
 
 /**
@@ -20,4 +23,17 @@ use RuntimeException;
  *
  * @author Brian Faust <brian@cline.sh>
  */
-abstract class InvalidConfigurationException extends RuntimeException implements FerretException {}
+abstract class InvalidConfigurationException extends RuntimeException implements FerretException, ProvidesSolution
+{
+    public function getSolution(): Solution
+    {
+        /** @var BaseSolution $solution */
+        $solution = BaseSolution::create('Review package usage and configuration.');
+
+        return $solution
+            ->setSolutionDescription('Exception: '.$this->getMessage())
+            ->setDocumentationLinks([
+                'Package documentation' => 'https://github.com/cline/ferret',
+            ]);
+    }
+}

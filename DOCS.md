@@ -1,15 +1,17 @@
 ## Table of Contents
 
-1. Directory Loading (`cookbooks/directory-loading.md`)
-2. Combining Configs (`cookbooks/combining-configs.md`)
-3. Format Conversion (`cookbooks/format-conversion.md`)
-4. Encryption (`cookbooks/encryption.md`)
-5. Typed Accessors (`cookbooks/typed-accessors.md`)
-6. Overview (`docs/README.md`)
-7. Directory Loading (`docs/directory-loading.md`)
-8. Encryption (`docs/encryption.md`)
-9. Format Conversion (`docs/format-conversion.md`)
-10. Typed Accessors (`docs/typed-accessors.md`)
+1. [Directory Loading](#doc-cookbooks-directory-loading) (`cookbooks/directory-loading.md`)
+2. [Combining Configs](#doc-cookbooks-combining-configs) (`cookbooks/combining-configs.md`)
+3. [Format Conversion](#doc-cookbooks-format-conversion) (`cookbooks/format-conversion.md`)
+4. [Encryption](#doc-cookbooks-encryption) (`cookbooks/encryption.md`)
+5. [Typed Accessors](#doc-cookbooks-typed-accessors) (`cookbooks/typed-accessors.md`)
+6. [Overview](#doc-docs-readme) (`docs/README.md`)
+7. [Directory Loading](#doc-docs-directory-loading) (`docs/directory-loading.md`)
+8. [Encryption](#doc-docs-encryption) (`docs/encryption.md`)
+9. [Format Conversion](#doc-docs-format-conversion) (`docs/format-conversion.md`)
+10. [Typed Accessors](#doc-docs-typed-accessors) (`docs/typed-accessors.md`)
+<a id="doc-cookbooks-directory-loading"></a>
+
 # Loading Configuration Directories
 
 Load an entire directory of configuration files into a namespaced structure, allowing dot-notation access across files.
@@ -122,6 +124,8 @@ function carrierSupportsService(string $carrierCode, string $service): bool
 // getCarrierCodes()                       -> ['ups', 'fedex', 'dhl']
 // carrierSupportsService('ups', 'ground') -> true
 ```
+
+<a id="doc-cookbooks-combining-configs"></a>
 
 # Combining Configuration Files
 
@@ -280,6 +284,8 @@ function buildTenantConfig(string $tenantId): string
 // $maxUsers = Ferret::get('tenant', 'limits.max_users');
 ```
 
+<a id="doc-cookbooks-format-conversion"></a>
+
 # Format Conversion
 
 Convert configuration files between different formats (JSON, YAML, NEON, TOML, XML, INI, PHP) and export configurations to strings.
@@ -424,6 +430,8 @@ function migrateYamlToNeon(string $sourceDir, string $destDir): array
 | XML    | .xml      | ✓    | ✓     |
 | INI    | .ini      | ✓    | ✓     |
 | PHP    | .php      | ✓    | ✓     |
+
+<a id="doc-cookbooks-encryption"></a>
 
 # Configuration Encryption
 
@@ -826,6 +834,8 @@ function decryptCarrierConfigs(string $environment): void
 }
 ```
 
+<a id="doc-cookbooks-typed-accessors"></a>
+
 # Typed Configuration Accessors
 
 Access configuration values with automatic type casting and validation, similar to Laravel's `Config::string()`, `Config::integer()`, etc.
@@ -1000,6 +1010,8 @@ $maxUpload = Ferret::float('app', 'limits.max_upload_mb');
 
 Use `get()` when you need defaults or mixed types. Use typed accessors when you need type guarantees.
 
+<a id="doc-docs-readme"></a>
+
 Ferret is a configuration management library for PHP that supports multiple formats including PHP arrays, JSON, YAML, TOML, INI, XML, and NEON.
 
 ## Installation
@@ -1042,10 +1054,12 @@ Ferret automatically detects the format based on file extension:
 
 ## Next Steps
 
-- [Directory Loading](./directory-loading.md) - Load entire configuration directories
-- [Format Conversion](./format-conversion.md) - Convert between formats
-- [Typed Accessors](./typed-accessors.md) - Type-safe value access
-- [Encryption](./encryption.md) - Protect sensitive values
+- [Directory Loading](#doc-docs-directory-loading) - Load entire configuration directories
+- [Format Conversion](#doc-docs-format-conversion) - Convert between formats
+- [Typed Accessors](#doc-docs-typed-accessors) - Type-safe value access
+- [Encryption](#doc-docs-encryption) - Protect sensitive values
+
+<a id="doc-docs-directory-loading"></a>
 
 Load and merge configuration from entire directories.
 
@@ -1130,6 +1144,8 @@ $config = Config::loadDirectory('config/');
 $config = Config::loadDirectory('config/', deepMerge: false);
 // Later files completely replace earlier values
 ```
+
+<a id="doc-docs-encryption"></a>
 
 Encrypt sensitive configuration values for secure storage.
 
@@ -1227,6 +1243,8 @@ $config = Config::encrypted('config.json', $key);
 $config = Config::encrypted('config.json', $key, Algorithm::AES256CBC);
 ```
 
+<a id="doc-docs-format-conversion"></a>
+
 Convert configuration files between different formats.
 
 **Use case:** Migrating configurations, generating configs for different tools, or normalizing config formats across projects.
@@ -1316,6 +1334,8 @@ $config->save('simple.ini', [
     'flatten' => true,  // Flatten nested structures
 ]);
 ```
+
+<a id="doc-docs-typed-accessors"></a>
 
 Type-safe configuration value access with automatic casting.
 

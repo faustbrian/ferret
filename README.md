@@ -19,10 +19,10 @@ composer require cline/ferret
 
 ## Documentation
 
-- **[Directory Loading](cookbooks/directory-loading.md)** - Load entire directories of config files with dot-notation access
-- **[Combining Configs](cookbooks/combining-configs.md)** - Merge multiple config files with deep/shallow merging
-- **[Format Conversion](cookbooks/format-conversion.md)** - Convert between JSON, YAML, NEON, XML, INI, and PHP
-- **[Encryption](cookbooks/encryption.md)** - Encrypt and decrypt sensitive configuration files
+- **[Directory Loading](DOCS.md#doc-cookbooks-directory-loading)** - Load entire directories of config files with dot-notation access
+- **[Combining Configs](DOCS.md#doc-cookbooks-combining-configs)** - Merge multiple config files with deep/shallow merging
+- **[Format Conversion](DOCS.md#doc-cookbooks-format-conversion)** - Convert between JSON, YAML, NEON, XML, INI, and PHP
+- **[Encryption](DOCS.md#doc-cookbooks-encryption)** - Encrypt and decrypt sensitive configuration files
 
 ## Supported Formats
 

@@ -1,15 +1,15 @@
 ## Table of Contents
 
-1. [Directory Loading](#doc-cookbooks-directory-loading) (`cookbooks/directory-loading.md`)
-2. [Combining Configs](#doc-cookbooks-combining-configs) (`cookbooks/combining-configs.md`)
-3. [Format Conversion](#doc-cookbooks-format-conversion) (`cookbooks/format-conversion.md`)
-4. [Encryption](#doc-cookbooks-encryption) (`cookbooks/encryption.md`)
-5. [Typed Accessors](#doc-cookbooks-typed-accessors) (`cookbooks/typed-accessors.md`)
-6. [Overview](#doc-docs-readme) (`docs/README.md`)
-7. [Directory Loading](#doc-docs-directory-loading) (`docs/directory-loading.md`)
-8. [Encryption](#doc-docs-encryption) (`docs/encryption.md`)
-9. [Format Conversion](#doc-docs-format-conversion) (`docs/format-conversion.md`)
-10. [Typed Accessors](#doc-docs-typed-accessors) (`docs/typed-accessors.md`)
+1. [Directory Loading](#doc-cookbooks-directory-loading)
+2. [Combining Configs](#doc-cookbooks-combining-configs)
+3. [Format Conversion](#doc-cookbooks-format-conversion)
+4. [Encryption](#doc-cookbooks-encryption)
+5. [Typed Accessors](#doc-cookbooks-typed-accessors)
+6. [Overview](#doc-docs-readme)
+7. [Directory Loading](#doc-docs-directory-loading)
+8. [Encryption](#doc-docs-encryption)
+9. [Format Conversion](#doc-docs-format-conversion)
+10. [Typed Accessors](#doc-docs-typed-accessors)
 <a id="doc-cookbooks-directory-loading"></a>
 
 # Loading Configuration Directories
